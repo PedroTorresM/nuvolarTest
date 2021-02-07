@@ -1,0 +1,25 @@
+Feaure: Facebook sign up process
+
+Scenario: Unregistered user signs up with correct information
+	Given an unregistered user
+	When selects the "create new account" button
+	And fills the form with valid information
+	And submits the form
+	Then a confirmation email is sent to the email address provided
+	And user navigates to the email to complete the process
+	And user is registered
+
+Scenario: Registered user tries to sign up
+	Given a registered user
+	When selects the "create new account" button
+	And fills the form with valid information
+	And submits the form
+	Then an error shows up stating that the information belongs to a registered user
+
+Scenario: Unregistered user signs up with incorrect information
+	Given an unregistered user
+	When selects the "create new account" button
+	And fills the form with invalid information
+	And submits the form
+	Then a error message appears stating that the introduced information is not correct
+
