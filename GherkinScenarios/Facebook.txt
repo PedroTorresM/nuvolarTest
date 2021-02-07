@@ -1,4 +1,4 @@
-Feaure: Facebook sign up process
+Feature: Facebook sign up process
 
 Scenario: Unregistered user signs up with correct information
 	Given an unregistered user
