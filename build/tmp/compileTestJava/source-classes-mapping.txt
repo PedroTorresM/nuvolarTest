@@ -1,0 +1,12 @@
+pages/FrontPage.java
+ pages.FrontPage
+pages/addToCartConfirmation.java
+ pages.addToCartConfirmation
+pages/ProductPage.java
+ pages.ProductPage
+pages/ProductList.java
+ pages.ProductList
+pages/cartPage.java
+ pages.cartPage
+tests/AmznCartTest.java
+ tests.AmznCartTest
